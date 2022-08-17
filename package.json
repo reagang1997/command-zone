@@ -1,11 +1,12 @@
 {
-  "name": "template",
+  "name": "Command_Zone",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd client && npm i && cd ../server && npm i"
   },
   "keywords": [],
   "author": "",

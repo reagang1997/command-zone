@@ -33,7 +33,7 @@ else {
 
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/template", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/the-command-zone", {
   useNewUrlParser: true,
 });
 
