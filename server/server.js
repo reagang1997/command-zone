@@ -27,10 +27,9 @@ else {
 app.use(routes);
 
 
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mtg-lifecounter", {
-//   useNewUrlParser: true,
-//   useFindAndModify: false
-// });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/template", {
+  useNewUrlParser: true,
+});
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
