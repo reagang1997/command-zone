@@ -14,7 +14,7 @@ import {
   Nav,
   Container,
   Row,
-  Col,
+  Col, Button,
 } from "reactstrap";
 
 // Core Components
@@ -26,7 +26,7 @@ function NavbarDefault() {
       <Navbar className="navbar-dark bg-default" expand="lg">
         <Container>
           <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
-            Default Color
+            Command Zone
           </NavbarBrand>
           <button
             className="navbar-toggler"
@@ -95,30 +95,24 @@ function NavbarDefault() {
                   nav
                   role="button"
                 >
-                  <i className="ni ni-settings-gear-65"></i>
+                  <i className="ni ni-circle-08"></i>
                   <span className="nav-link-inner--text d-lg-none">
-                    Settings
+                    Profile
                   </span>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbar-default_dropdown_1" right>
                   <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    href="/register"
+                    onClick={(e) => <Link to="/register"/>}
                   >
-                    Action
-                  </DropdownItem>
-                  <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    Another action
+                    Register
                   </DropdownItem>
                   <DropdownItem divider></DropdownItem>
                   <DropdownItem
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    href="/login"
+                    onClick={(e) => <Link to="/login"/>}
                   >
-                    Something else here
+                    Login
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
