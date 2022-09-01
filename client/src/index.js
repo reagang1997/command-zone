@@ -27,7 +27,7 @@ import LoginPage from "views/examples/LoginPage.js";
 import PricingPage from "views/examples/PricingPage.js";
 import ProductPage from "views/examples/ProductPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
+import RegisterPage from "views/RegisterPage.js";
 import ResetPage from "views/examples/ResetPage.js";
 import store from "./assets/utils/store";
 

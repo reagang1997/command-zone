@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd client && npm i && cd ../server && npm i"
+    "install": "npm i && cd client && npm i && cd ../server && npm i"
   },
   "keywords": [],
   "author": "",
